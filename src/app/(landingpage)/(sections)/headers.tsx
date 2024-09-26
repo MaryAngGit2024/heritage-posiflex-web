@@ -6,7 +6,7 @@ import { Building } from "lucide-react";
 export const HeadersLanding = () => {
   return (
     <div className="flex justify-center items-center w-full px-4 bg-cover bg-center bg-blend-colors">
-      <div className="flex justify-center px-[8rem] py-[6rem] gap-[4rem]">
+      <div className="flex justify-center px-[8rem] pb-[10rem] pt-[4rem] gap-[4rem]">
         <div className="w-full p-none mt-[9rem]">
           <p className="text-xl mb-2 text-[#563abb] font-semibold">
             Be A Part Of The Heritage and Posiflex Family
