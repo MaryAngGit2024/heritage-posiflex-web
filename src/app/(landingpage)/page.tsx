@@ -1,4 +1,4 @@
-import { About } from "./(sections)/about";
+import { Team } from "./(sections)/team";
 import { HeadersLanding } from "./(sections)/headers";
 import { Posiflex } from "./(sections)/posiflex";
 import Products from "./(sections)/products";
@@ -8,13 +8,13 @@ import Services from "./(sections)/services";
 export default function Home() {
   return (
     <div className="">
-      <div>
-        <HeadersLanding />
+      <HeadersLanding />
+      <div className="bg-gray-50">
         <Services />
-        <Products />
-        <About />
-        <Posiflex />
+        <Team />
       </div>
+      <Products />
+      <Posiflex />
     </div>
   );
 }

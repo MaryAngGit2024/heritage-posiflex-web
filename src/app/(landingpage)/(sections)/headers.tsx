@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import HeaderPhoto from "@/images/header-img.jpg";
+import { Building } from "lucide-react";
 
 export const HeadersLanding = () => {
   return (
     <div className="flex justify-center items-center w-full px-4 bg-cover bg-center bg-blend-colors">
       <div className="flex justify-center px-[8rem] py-[5rem] gap-[4rem]">
-        <div className="w-full p-none mt-8">
+        <div className="w-full p-none mt-[6rem]">
           <p className="text-xl mb-2 text-[#563abb] font-semibold">
             Be A Part Of The Heritage and Posiflex Family
           </p>
@@ -18,12 +19,13 @@ export const HeadersLanding = () => {
             <span className="text-[3rem]">Your Success is Our Vision</span>
           </h1>
 
-          <div className=" mt-9 w-[10rem]">
+          <div className=" mt-7 w-[9rem]">
             <a
-              className="rounded-[10rem] border-none shadow-white py-2 flex items-center justify-center p-auto text-base leading-6  text-white bg-[#3d2c7c] hover:bg-[#4c359d] hover:text-white shadow-lg transition duration-150 ease-in-out font-semibold"
-              href=""
+              className="hover:underline underline-offset-4 font-semibold rounded-full bg-[#3d2c7c] hover:bg-[#4c359d] text-white px-4 py-3 justify-between flex items-center"
+              href="/about"
             >
-              CONTACT US
+              <Building />
+              ABOUT US
             </a>
           </div>
         </div>

@@ -3,12 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/images/hmopi-logo.gif";
 import Text from "@/images/hmopi-text.gif";
+import { Phone } from "lucide-react";
 
 export const Navbar = () => {
   return (
     <header className="flex item-center justify-between shadow-sm shadow-gray-200 dark:shadow-none dark:bg-[#020817] bg-white  ">
       <div className="space-x-2 flex items-center justify-center py-1 mb-2 gap-[5rem]  text-center ml-5">
-        <Link className="mt-3 flex justify-between gap-2" href="#">
+        <Link className="mt-3 flex justify-between gap-2" href="/">
           <Image src={Logo} alt="logo" width={50} height={50} />
           <Image src={Text} alt="text" width={300} height={200} />
         </Link>
@@ -19,26 +20,27 @@ export const Navbar = () => {
           <ul className="flex items-center space-x-4 gap-2 ">
             <Link
               className="hover:underline underline-offset-4  font-semibold"
-              href="#home"
+              href="/"
             >
               HOME
             </Link>
             <Link
               className="hover:underline underline-offset-4 font-semibold"
-              href="#"
+              href="/products"
             >
               PRODUCTS
             </Link>
             <Link
               className="hover:underline underline-offset-4 font-semibold"
-              href="#"
+              href="/about"
             >
               ABOUT US
             </Link>
             <Link
-              className="hover:underline underline-offset-4 font-semibold rounded-full bg-[#3d2c7c] hover:bg-[#4c359d] text-white px-4 py-3"
-              href="#"
+              className="hover:underline underline-offset-4 font-semibold rounded-full bg-[#3d2c7c] hover:bg-[#4c359d] text-white px-4 py-3 justify-between flex items-center gap-2"
+              href="/contact"
             >
+              <Phone />
               CONTACT US
             </Link>
           </ul>
