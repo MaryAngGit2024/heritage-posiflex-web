@@ -15,8 +15,9 @@ export const HeadersLanding = () => {
             className="text-[2rem] font-bold"
             style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)" }}
           >
-            BECAUSE WITH US,{" "}
-            <span className="text-[3rem]">Your Success is Our Vision</span>
+            <span className="text-[3rem]">
+              For Office Furniture and Interior Solutions,
+            </span>
           </h1>
 
           <div className=" mt-7 w-[9rem]">

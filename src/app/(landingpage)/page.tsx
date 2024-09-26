@@ -8,10 +8,8 @@ export default function Home() {
   return (
     <div className="">
       <HeadersLanding />
-      <div className="bg-gray-50">
-        <Services />
-        {/* <Team /> */}
-      </div>
+      <Services />
+      {/* <Team /> */}
       <Products />
       <Posiflex />
     </div>

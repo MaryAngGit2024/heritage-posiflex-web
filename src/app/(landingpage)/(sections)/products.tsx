@@ -56,7 +56,7 @@ const products: Product[] = [
 
 export default function Products() {
   return (
-    <div className="container mx-auto px-4 py-16 bg-blend-colors bg-cover bg-center">
+    <div className="px-4 py-16 bg-blend-colors bg-cover bg-center w-full">
       <h1 className="text-4xl mb-12 text-center text-white font-semibold">
         Top Products
       </h1>
