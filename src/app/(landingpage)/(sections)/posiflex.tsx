@@ -12,7 +12,7 @@ export const Posiflex = () => {
           alt={""}
           width={350}
           height={250}
-          className="rounded-xl"
+          className="rounded-xl max-md:hidden block"
         />
         <div className="w-full p-none mt-[1rem]">
           <h1

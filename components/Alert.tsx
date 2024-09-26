@@ -11,7 +11,7 @@ export default function AlertDialog() {
         </AlertDescription>
         <AlertDescription className="text-white flex gap-2 justify-center items-center">
           <Mail className="h-4 w-4 text-white" />
-          ekowood@hmopi.net
+          posiflex@hmopi.net | pfsales@hmopi.net | statio_sales1@hmopi.net
         </AlertDescription>
         <AlertDescription className="text-white flex gap-2 justify-center items-center">
           <Phone className="h-4 w-4 text-white" />

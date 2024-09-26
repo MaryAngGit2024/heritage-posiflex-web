@@ -34,7 +34,7 @@ export const HeadersLanding = () => {
           alt={""}
           width={350}
           height={350}
-          className="rounded-xl"
+          className="rounded-xl max-md:hidden block"
         />
       </div>
     </div>
