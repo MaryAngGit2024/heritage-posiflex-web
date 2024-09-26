@@ -15,7 +15,7 @@ export default function AlertDialog() {
         </AlertDescription>
         <AlertDescription className="text-white flex gap-2 justify-center items-center">
           <Phone className="h-4 w-4 text-white" />
-          (632) 712-45-62
+          (632) 562-9280
         </AlertDescription>
       </div>
     </Alert>
