@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/images/hmopi-logo.gif";
 import Text from "@/images/hmopi-text.gif";
-import AlertDialog from "./Alert";
 
 export const Navbar = () => {
   return (

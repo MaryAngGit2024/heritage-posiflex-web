@@ -1,5 +1,5 @@
 import { MapPinCheckInside, Mail, Phone } from "lucide-react";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 
 export default function AlertDialog() {
   return (

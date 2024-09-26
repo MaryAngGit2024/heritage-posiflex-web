@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import Logo from "@/images/hmopi-logo-scaled.gif";
 import Image from "next/image";
 
