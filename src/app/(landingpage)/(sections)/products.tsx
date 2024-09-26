@@ -56,8 +56,8 @@ const products: Product[] = [
 
 export default function Products() {
   return (
-    <div className="container mx-auto px-4 py-16 bg-white-image">
-      <h1 className="text-4xl font-light mb-12 text-center text-gray-800">
+    <div className="container mx-auto px-4 py-16 bg-blend-colors bg-cover bg-center">
+      <h1 className="text-4xl mb-12 text-center text-white font-semibold">
         Top Products
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

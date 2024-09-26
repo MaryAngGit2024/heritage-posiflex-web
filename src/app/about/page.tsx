@@ -1,44 +1,61 @@
 export default function AboutPage() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-blend-colors bg-center bg-cover">
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-black">
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 ">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
-                  About Heritage
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-black">
+                  About HMOPI
                 </h1>
-                <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
-                  Innovating for a better tomorrow. Were on a mission to change
-                  the world through technology.
+                <p className="mx-auto max-w-[700px] text-black md:text-xl text-justify">
+                  To date, HMOPI has ventured into the construction industry as
+                  well to expand and cover a greater market by introducing three
+                  new products: Engineered Hardwood Flooring, Window Blinds or
+                  Coverings and Engineered Solid Strand-woven Bamboo Flooring.
+                  Through the years, HMOPI has maintained its professional
+                  integrity, satisfactory track record and accumulated an
+                  increasing number of satisfied clients. In addition to this,
+                  its marketing channel has grown to cover practically the
+                  entire country
                 </p>
               </div>
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
+        <section className="w-full py-12 md:py-24 lg:py-32 border-t border-black">
           <div className="container px-4 md:px-6">
             <div className="grid gap-10 sm:grid-cols-2 md:gap-16">
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                   Our Story
                 </h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Founded in 2010, Acme Inc has been at the forefront of
-                  technological innovation for over a decade. Our journey began
-                  with a simple idea: to make the complex simple and the
-                  impossible possible.
+                <p className="max-w-[600px] text-black md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-justify">
+                  A one stop shop of high quality modern office furniture.
+                  Heritage Multi-Office Products, Inc. (HMOPI) was established
+                  in May 1997 as the source of modern modular office partitions,
+                  imported office furniture and stationery line of products.
+                  With this nice, HMOPI can provide almost all the interior
+                  office, condominium and residential requirements. Clients can
+                  select from a wide variety of styles and finishes from the
+                  most unique and up to date designs at the best possible
+                  prices. HMOPI can likewise customize its products to suite the
+                  clients preferred designs and standards.
                 </p>
               </div>
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                   Our Mission
                 </h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Were dedicated to pushing the boundaries of whats possible in
-                  technology. Our mission is to create innovative solutions that
-                  improve lives and businesses around the globe.
+                <p className="max-w-[600px] text-black md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-justify">
+                  We aim to be a company that understands our clients needs,
+                  thereby, surpassing their expectations through our products
+                  and services. As a practice, our relationship with our clients
+                  is of much value as we strive to be their partner in their
+                  respective industries. We strive to always lookout for new,
+                  innovative and unique products to offer our ever growing
+                  number of satisfied clients in various industries.
                 </p>
               </div>
             </div>

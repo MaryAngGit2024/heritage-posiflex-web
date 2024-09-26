@@ -11,7 +11,7 @@ export default function Home() {
       <HeadersLanding />
       <div className="bg-gray-50">
         <Services />
-        <Team />
+        {/* <Team /> */}
       </div>
       <Products />
       <Posiflex />
