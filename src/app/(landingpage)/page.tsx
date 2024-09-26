@@ -1,4 +1,3 @@
-import { Team } from "./(sections)/team";
 import { HeadersLanding } from "./(sections)/headers";
 import { Posiflex } from "./(sections)/posiflex";
 import Products from "./(sections)/products";
