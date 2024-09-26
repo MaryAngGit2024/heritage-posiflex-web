@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import HeaderPhoto from "@/images/header-img.jpg";
+import HeaderPhoto from "@/images/header-img-hd.png";
 import { Building } from "lucide-react";
 
 export const HeadersLanding = () => {
   return (
     <div className="flex justify-center items-center w-full px-4 bg-cover bg-center bg-blend-colors">
-      <div className="flex justify-center px-[8rem] py-[5rem] gap-[4rem]">
-        <div className="w-full p-none mt-[6rem]">
+      <div className="flex justify-center px-[8rem] py-[6rem] gap-[4rem]">
+        <div className="w-full p-none mt-[9rem]">
           <p className="text-xl mb-2 text-[#563abb] font-semibold">
             Be A Part Of The Heritage and Posiflex Family
           </p>
@@ -33,8 +33,8 @@ export const HeadersLanding = () => {
           src={HeaderPhoto}
           alt={""}
           width={350}
-          height={250}
-          className="rounded-xl shadow-lg"
+          height={350}
+          className="rounded-xl"
         />
       </div>
     </div>
