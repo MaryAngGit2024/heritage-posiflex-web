@@ -11,6 +11,7 @@ const config: Config = {
   theme: {
   	extend: {
 		backgroundImage: {
+			"header-img-fur": "url('/header-img-furniture.jpg')",
 			"white-image":"url('/bg.jpg')",
 			"blend-colors": "url('/header-bg.png')"	,
 			"service": "url('/services-bg.png')"

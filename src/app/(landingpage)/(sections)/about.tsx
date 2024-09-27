@@ -22,7 +22,7 @@ export default function About() {
         scale: scrollYProgress,
         opacity: scrollYProgress,
       }}
-      className="min-h-screen py-20 px-4 sm:px-6 lg:px-8"
+      className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 pt-[20rem]"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">

@@ -12,8 +12,8 @@ export const Footer = () => {
               <Image src={Logo} alt="logo" width={600} height={600} />
             </a>
             <p className="py-8 text-sm text-black lg:max-w-xs text-center lg:text-left">
-              Philippine-exclusive distributor of award-winning and most trusted
-              POSIFLEX POS machines, kiosks, and peripherals
+              The elegance of our products is being represented and symbolized
+              by our registered Trademarks.
             </p>
             <a
               href="javascript:;"
