@@ -8,7 +8,7 @@ import { Building } from "lucide-react";
 export const HeadersLanding = () => {
   return (
     <div className="flex justify-center items-center w-full px-4 h-screen">
-      <div className="flex justify-center px-[8rem] pb-[20rem] gap-[5rem]">
+      <div className="flex justify-center items-center px-[8rem] gap-[5rem] pb-[10rem]">
         <div className="w-full p-none">
           <p
             style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)" }}
