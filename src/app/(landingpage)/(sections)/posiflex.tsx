@@ -1,12 +1,28 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 import Image from "next/image";
 import PosiflexPhoto from "@/images/Posiflex-with-screen-final.gif";
 import { Building } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { motion, useScroll } from "framer-motion";
 
 export const Posiflex = () => {
+  const targetRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["0 1", "1.0 1"],
+  });
+
   return (
-    <div className="flex justify-center items-center w-full px-4 h-screen container mx-auto">
+    <motion.div
+      ref={targetRef}
+      style={{
+        scale: scrollYProgress,
+        opacity: scrollYProgress,
+      }}
+      className="flex justify-center items-center w-full px-4 h-screen container mx-auto"
+    >
       <Card className="flex justify-center items-center gap-[4rem] p-[7rem] bg-transparent border-none shadow-none">
         <Image
           src={PosiflexPhoto}
@@ -17,13 +33,15 @@ export const Posiflex = () => {
         />
         <div className="w-full p-none mt-[1rem]">
           <h1
-            className="text-[3rem] font-bold text-[#ED1B22]"
+            className="xl:text-[3rem] lg:text-[2rem] md:text-[2rem] font-bold text-[#ED1B22]"
             style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)" }}
           >
             POSIFLEX {""}
-            <span className="text-[2rem]">High Quality and Passion</span>
           </h1>
-          <p className="text-xl mb-2 text-black font-semibold text-justify">
+          {/* <span className="xl:text-[2rem] lg:text-[1rem] md:text-[1rem]">
+            High Quality and Passion
+          </span> */}
+          <p className="xl:text-xl lg:text-lg md:text-md text-base mb-2 text-black font-semibold text-justify">
             POSIFLEX, a symbol of quality in the POS industry for its very
             durable cash drawers has brought the same passion for the birth of a
             wide range of quality POS hardware products. This includes
@@ -43,6 +61,6 @@ export const Posiflex = () => {
           </div>
         </div>
       </Card>
-    </div>
+    </motion.div>
   );
 };

@@ -1,6 +1,8 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
-import HeaderPhoto from "@/images/header_photo.avif";
+import HeaderPhoto from "@/images/header-img-furniture.jpg";
 import { Building } from "lucide-react";
 
 export const HeadersLanding = () => {
@@ -16,7 +18,7 @@ export const HeadersLanding = () => {
             style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)" }}
           >
             <span className="text-2xl font-extrabold text-gray-900 sm:text-5xl md:text-4xl lg:text-3xl">
-              For Office Furniture and Interior Solutions,
+              A Pacesetter in Business Automation
             </span>
           </h1>
 
@@ -33,7 +35,7 @@ export const HeadersLanding = () => {
         <Image
           src={HeaderPhoto}
           alt={""}
-          className="rounded-md max-md:hidden block xl:w-[400px] xl:h-[400px] lg:w-[400px] lg:h-[400px] md:w-[300px] md:h-[300px]"
+          className="rounded-md max-md:hidden block xl:w-[400px] xl:h-[400px] lg:w-[400px] lg:h-[400px] md:w-[300px] md:h-[300px] shadow-xl"
         />
       </div>
     </div>

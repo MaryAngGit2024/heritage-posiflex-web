@@ -1,16 +1,29 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Users, Rocket, Award } from "lucide-react";
 import Image from "next/image";
+import { motion, useScroll } from "framer-motion";
 
 export default function About() {
   const [isHovered, setIsHovered] = useState(false);
+  const targetRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["0 1", "0.60 1"],
+  });
 
   return (
-    <section className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+    <motion.div
+      ref={targetRef}
+      style={{
+        scale: scrollYProgress,
+        opacity: scrollYProgress,
+      }}
+      className="min-h-screen py-20 px-4 sm:px-6 lg:px-8"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
@@ -121,10 +134,10 @@ export default function About() {
                 </div>
                 <div className="mt-10 lg:mt-0 relative">
                   <Image
-                    src="/header_photo.avif"
+                    src="/about-img.gif"
                     alt="Team collaboration"
                     width={600}
-                    height={400}
+                    height={600}
                     className="rounded-lg shadow-lg"
                   />
                 </div>
@@ -133,6 +146,6 @@ export default function About() {
           </Card>
         </div>
       </div>
-    </section>
+    </motion.div>
   );
 }

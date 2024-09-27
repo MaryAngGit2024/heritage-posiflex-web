@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { useRef } from "react";
+import { motion, useScroll } from "framer-motion";
 
 // interface Product {
 //   id: number;
@@ -29,9 +33,22 @@ const products = [
 ];
 
 export default function Products() {
+  const targetRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["0 1", "0.90 1"],
+  });
+
   return (
-    <div className="border-t h-screen flex items-center justify-center">
-      <div className="container mx-auto py-8  w-full">
+    <motion.div
+      ref={targetRef}
+      style={{
+        scale: scrollYProgress,
+        opacity: scrollYProgress,
+      }}
+      className="h-screen flex items-center justify-center mx-auto"
+    >
+      <div className="py-8 container w-full">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
             Featured Products
@@ -63,6 +80,6 @@ export default function Products() {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
