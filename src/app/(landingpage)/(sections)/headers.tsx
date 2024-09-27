@@ -1,21 +1,21 @@
 import React from "react";
 import Image from "next/image";
-import HeaderPhoto from "@/images/header-img-hd.png";
+import HeaderPhoto from "@/images/header_photo.avif";
 import { Building } from "lucide-react";
 
 export const HeadersLanding = () => {
   return (
-    <div className="flex justify-center items-center w-full px-4 bg-cover bg-center bg-blend-colors">
-      <div className="flex justify-center px-[8rem] pb-[10rem] pt-[4rem] gap-[4rem]">
-        <div className="w-full p-none mt-[9rem]">
-          <p className="text-xl mb-2 text-[#563abb] font-semibold">
-            Be A Part Of The Heritage and Posiflex Family
+    <div className="flex justify-center items-center w-full px-4  h-screen">
+      <div className="flex justify-center px-[8rem] pb-[10rem] gap-[5rem]">
+        <div className="w-full p-none mt-20">
+          <p className="xl:text-4xl lg:text-2xl md:text-2xl mb-2 text-[#563abb] font-semibold italic">
+            Heritage Multi-Office Products Inc.
           </p>
           <h1
-            className="text-[2rem] font-bold"
+            className="font-bold"
             style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)" }}
           >
-            <span className="text-[3rem]">
+            <span className="text-2xl font-extrabold text-gray-900 sm:text-5xl md:text-4xl lg:text-3xl">
               For Office Furniture and Interior Solutions,
             </span>
           </h1>
@@ -33,9 +33,7 @@ export const HeadersLanding = () => {
         <Image
           src={HeaderPhoto}
           alt={""}
-          width={350}
-          height={350}
-          className="rounded-xl max-md:hidden block"
+          className="rounded-md max-md:hidden block xl:w-[400px] xl:h-[400px] lg:w-[400px] lg:h-[400px] md:w-[300px] md:h-[300px]"
         />
       </div>
     </div>

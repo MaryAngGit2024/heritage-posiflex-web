@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/images/hmopi-logo.gif";
-import Text from "@/images/hmopi-text.gif";
+import Logo from "@/images/hmopi-logo.png";
+// import Text from "@/images/hmopi-text.gif";
 import { Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import {
@@ -54,28 +54,34 @@ const components: { title: string; href: string; description: string }[] = [
 
 export const Navbar = () => {
   return (
-    <header className="flex item-center justify-between shadow-sm shadow-gray-200 dark:shadow-none dark:bg-[#020817] bg-white  ">
-      <div className="space-x-2 flex items-center justify-center py-1 mb-2 gap-[5rem]  text-center ml-5">
+    <header className="flex item-center justify-between shadow-sm shadow-gray-200 dark:shadow-none dark:bg-[#020817] bg-gradient-to-br from-purple-100 to-indigo-200 sticky top-0 z-20">
+      <div className="space-x-2 flex items-center justify-center py-1 mb-2 gap-[5rem]  text-center ml-[8rem]">
         <Link className="mt-3 flex justify-between gap-2" href="/">
           <Image src={Logo} alt="logo" width={50} height={50} />
-          <Image src={Text} alt="text" width={300} height={200} />
+          {/* <Image
+            src={Text}
+            alt="text"
+            width={500}
+            height={500}
+            className="max-lg:hidden"
+          /> */}
         </Link>
       </div>
 
-      <div className="flex items-center justify-center space-x-8 mr-5 ">
+      <div className="flex items-center justify-center space-x-8 mr-[8rem] ">
         <div className="text-xs hidden md:block">
-          <ul className="flex items-center space-x-4 gap-2 ">
+          <ul className="flex items-center space-x-4 gap-2 font-semibold text-[0.9rem]">
             <Link
-              className="hover:underline underline-offset-4  font-semibold"
+              className="hover:underline underline-offset-4 mx-auto"
               href="/"
             >
               HOME
             </Link>
-            <NavigationMenu className="justify-end mx-auto">
-              <NavigationMenuList>
+            <NavigationMenu className="justify-end mx-auto bg-transparent">
+              <NavigationMenuList className="bg-transparent">
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="font-semibold">
-                    Products
+                    PRODUCTS
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
@@ -94,13 +100,13 @@ export const Navbar = () => {
               </NavigationMenuList>
             </NavigationMenu>
             <Link
-              className="hover:underline underline-offset-4 font-semibolda"
+              className="hover:underline underline-offset-4 mx-auto"
               href="/about"
             >
               ABOUT US
             </Link>
             <Link
-              className="hover:underline underline-offset-4 font-semibold"
+              className="hover:underline underline-offset-4 mx-auto"
               href="/about"
             >
               POSIFLEX

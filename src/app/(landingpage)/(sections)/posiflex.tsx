@@ -2,11 +2,12 @@ import React from "react";
 import Image from "next/image";
 import PosiflexPhoto from "@/images/Posiflex-with-screen-final.gif";
 import { Building } from "lucide-react";
+import { Card } from "@/components/ui/card";
 
 export const Posiflex = () => {
   return (
-    <div className="flex justify-center items-center w-full px-4 ">
-      <div className="flex justify-center px-[5rem] py-[5rem] gap-[4rem]">
+    <div className="flex justify-center items-center w-full px-4 h-screen container mx-auto">
+      <Card className="flex justify-center items-center gap-[4rem] p-[7rem] bg-transparent border-none shadow-none">
         <Image
           src={PosiflexPhoto}
           alt={""}
@@ -22,7 +23,7 @@ export const Posiflex = () => {
             POSIFLEX {""}
             <span className="text-[2rem]">High Quality and Passion</span>
           </h1>
-          <p className="text-xl mb-2 text-black font-semibold">
+          <p className="text-xl mb-2 text-black font-semibold text-justify">
             POSIFLEX, a symbol of quality in the POS industry for its very
             durable cash drawers has brought the same passion for the birth of a
             wide range of quality POS hardware products. This includes
@@ -41,7 +42,7 @@ export const Posiflex = () => {
             </a>
           </div>
         </div>
-      </div>
+      </Card>
     </div>
   );
 };
