@@ -1,4 +1,4 @@
-import { Navbar } from "../../../components/Navbar";
+// import { Navbar } from "../../../components/Navbar";
 import About from "./(sections)/about";
 import { HeadersLanding } from "./(sections)/headers";
 import { Posiflex } from "./(sections)/posiflex";
