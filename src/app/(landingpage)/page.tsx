@@ -11,7 +11,7 @@ import Testimonials from "./(sections)/testimonial";
 export default function Home() {
   return (
     <div className="scroll-smooth">
-      <div className="bg-header-img-fur bg-cover bg-center bg-fixed ">
+      <div className="bg-header-img-fur bg-cover bg-center bg-fixed p-[10rem]">
         <HeadersLanding />
       </div>
       <div className="bg-gradient-to-br from-purple-100 to-indigo-200 pb-20">

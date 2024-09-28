@@ -7,25 +7,25 @@ import { Building } from "lucide-react";
 
 export const HeadersLanding = () => {
   return (
-    <div className="flex items-center justify-start w-full h-screen">
-      <div className="px-[1rem] p-[3rem] mb-[10rem] mr-auto ml-[1rem] border-gray-400 backdrop-blur-sm bg-white/10: rounded-2xl">
+    <div className="flex items-center justify-center w-full pb-[5rem]">
+      <div className="mr-auto border-gray-400 backdrop-blur-sm bg-white/10: rounded-2xl">
         <div className="w-full p-none">
           <p className="xl:text-4xl lg:text-4xl md:text-2xl mb-2 text-[#563abb] font-extrabold ">
             Heritage Multi-Office Products Inc.
           </p>
           <h1 className="font-bold">
-            <span className="text-2xl font-extrabold text-white sm:text-5xl md:text-4xl lg:text-3xl">
+            <span className="text-2xl font-extrabold text-gray-900 sm:text-5xl md:text-4xl lg:text-3xl">
               A Pacesetter in Business Automation
             </span>
           </h1>
 
-          <div className="mt-[1rem]  w-[9rem]">
+          <div className="mt-[1rem]  w-[10rem]">
             <a
               className="hover:underline underline-offset-4 font-semibold rounded-full bg-[#3d2c7c] hover:bg-[#4c359d] text-white px-4 py-3 justify-between flex items-center"
               href="/about"
             >
               <Building />
-              ABOUT US
+              Our Products
             </a>
           </div>
         </div>
