@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "@/images/hmopi-logo-scaled.gif";
+import Logo from "@/images/hmopi-logo.png";
 import Image from "next/image";
 
 export const Footer = () => {
@@ -8,10 +8,13 @@ export const Footer = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 gap-y-8 md:gap-8 py-10 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full">
           <div className="col-span-full mb-10 lg:col-span-2 lg:mb-0">
-            <a href="#" className="flex justify-center lg:justify-start">
-              <Image src={Logo} alt="logo" width={600} height={600} />
+            <a href="/" className="flex justify-center lg:justify-start">
+              <Image src={Logo} alt="logo" width={50} height={50} />
+              <h1 className="flex justify-center items-center text-[#563abb] font-semibold italic ml-2">
+                Heritage Multi-Office Products Inc.
+              </h1>
             </a>
-            <p className="py-8 text-sm text-black lg:max-w-xs text-center lg:text-left">
+            <p className="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">
               The elegance of our products is being represented and symbolized
               by our registered Trademarks.
             </p>
