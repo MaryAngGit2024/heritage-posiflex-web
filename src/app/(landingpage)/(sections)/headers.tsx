@@ -19,7 +19,7 @@ export const HeadersLanding = () => {
             </span>
           </h1>
 
-          <div className="  w-[9rem]">
+          <div className="mt-[1rem]  w-[9rem]">
             <a
               className="hover:underline underline-offset-4 font-semibold rounded-full bg-[#3d2c7c] hover:bg-[#4c359d] text-white px-4 py-3 justify-between flex items-center"
               href="/about"
