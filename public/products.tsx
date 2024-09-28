@@ -37,7 +37,7 @@ export default function OurProducts() {
   });
 
   return (
-    <div className="h-screen bg-gradient-to-br from-purple-100 to-indigo-200 pb-20 flex justify-center items-center">
+    <div className="h-screen  flex justify-center items-center">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
