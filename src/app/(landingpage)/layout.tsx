@@ -17,8 +17,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Home - Posiflex PH",
-  description: "POSIFLEX PH - Possible, Incredible, and Flexible",
+  title: "Home - Hmopi",
+  description: " Heritage Multi-Office Products Inc. ",
 };
 
 export default function RootLayout({
