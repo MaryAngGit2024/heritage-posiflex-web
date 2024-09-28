@@ -52,21 +52,23 @@ export const Footer = () => {
               </li>
               <li>
                 <a href="#" className=" text-gray-600 hover:text-gray-900">
-                  Where to Buy
+                  Contact Us
                 </a>
               </li>
             </ul>
           </div>
 
           <div className="lg:mx-auto text-left ">
-            <h4 className="text-lg text-gray-900 font-medium mb-7">Products</h4>
+            <h4 className="text-lg text-gray-900 font-medium mb-7">
+              Our Products
+            </h4>
             <ul className="text-sm  transition-all duration-500">
               <li className="mb-6">
                 <a
                   href="javascript:;"
                   className="text-gray-600 hover:text-gray-900"
                 >
-                  POS
+                  Flooring Strand-Woven
                 </a>
               </li>
               <li className="mb-6">
@@ -74,7 +76,7 @@ export const Footer = () => {
                   href="javascript:;"
                   className=" text-gray-600 hover:text-gray-900"
                 >
-                  Mobile POS
+                  Window Blinds
                 </a>
               </li>
               <li className="mb-6">
@@ -82,7 +84,7 @@ export const Footer = () => {
                   href="javascript:;"
                   className=" text-gray-600 hover:text-gray-900"
                 >
-                  Kiosk
+                  Furniture
                 </a>
               </li>
               <li className="mb-6">
@@ -90,7 +92,7 @@ export const Footer = () => {
                   href="javascript:;"
                   className=" text-gray-600 hover:text-gray-900"
                 >
-                  Peripherals (Standalone)
+                  Stationery
                 </a>
               </li>
               <li>
@@ -98,7 +100,7 @@ export const Footer = () => {
                   href="javascript:;"
                   className=" text-gray-600 hover:text-gray-900"
                 >
-                  Peripherals (Attachment )
+                  Posiflex Products
                 </a>
               </li>
             </ul>

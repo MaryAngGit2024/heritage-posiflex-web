@@ -16,12 +16,12 @@ import { motion, useScroll } from "framer-motion";
 const products = [
   {
     id: 1,
-    name: "Chairs",
+    name: "Flooring Strand-Woven",
     image: "/header_photo.avif",
   },
   {
     id: 2,
-    name: "Office Chairs",
+    name: "Window Blinds",
     image: "/header_photo.avif",
   },
   {
@@ -29,7 +29,7 @@ const products = [
     name: "Furnitures",
     image: "/header_photo.avif",
   },
-  { id: 4, name: "Tables", image: "/header_photo.avif" },
+  { id: 4, name: "Stationery", image: "/header_photo.avif" },
 ];
 
 export default function Products() {
