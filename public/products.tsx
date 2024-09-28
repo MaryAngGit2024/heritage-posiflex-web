@@ -1,9 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import { ArrowRightIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useRef } from "react";
 
 const categories = [
   {
@@ -29,6 +30,12 @@ const categories = [
 ];
 
 export default function OurProducts() {
+  const targetRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["0 1", "0.90 1"],
+  });
+
   return (
     <div className="h-screen bg-gradient-to-br from-purple-100 to-indigo-200 pb-20 flex justify-center items-center">
       <div className="container mx-auto px-4">
@@ -46,9 +53,11 @@ export default function OurProducts() {
           {categories.map((category, index) => (
             <motion.div
               key={category.name}
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              ref={targetRef}
+              style={{
+                scale: scrollYProgress,
+                opacity: scrollYProgress,
+              }}
               className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
             >
               <div className="relative h-48">

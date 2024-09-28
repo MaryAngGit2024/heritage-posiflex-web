@@ -2,7 +2,7 @@
 import About from "./(sections)/about";
 import { HeadersLanding } from "./(sections)/headers";
 import { Posiflex } from "./(sections)/posiflex";
-import Products from "./(sections)/products";
+import Products from "../../../public/products";
 
 import Services from "./(sections)/services";
 import { Team } from "./(sections)/team";
