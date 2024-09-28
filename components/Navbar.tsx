@@ -35,7 +35,7 @@ export const Navbar = () => {
       <div className="space-x-2 flex items-center justify-center py-1 mb-2 gap-[5rem]  text-center ml-[8rem]">
         <Link className="mt-3 flex justify-between gap-2" href="/">
           <Image src={Logo} alt="logo" width={50} height={50} />
-          <h1 className="flex justify-center items-center text-[#563abb] font-semibold italic">
+          <h1 className="flex justify-center items-center text-[#563abb] font-semibold">
             Heritage Multi-Office Products Inc.
           </h1>
         </Link>

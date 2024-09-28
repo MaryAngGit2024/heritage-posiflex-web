@@ -10,7 +10,7 @@ export const Footer = () => {
           <div className="col-span-full mb-10 lg:col-span-2 lg:mb-0">
             <a href="/" className="flex justify-center lg:justify-start">
               <Image src={Logo} alt="logo" width={50} height={50} />
-              <h1 className="flex justify-center items-center text-[#563abb] font-semibold italic ml-2">
+              <h1 className="flex justify-center items-center text-[#563abb] font-semibold  ml-2">
                 Heritage Multi-Office Products Inc.
               </h1>
             </a>
