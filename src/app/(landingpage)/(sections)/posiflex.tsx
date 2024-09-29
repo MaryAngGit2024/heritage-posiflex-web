@@ -21,9 +21,9 @@ export const Posiflex = () => {
         scale: scrollYProgress,
         opacity: scrollYProgress,
       }}
-      className="flex justify-center items-center w-full px-4 h-screen container mx-auto"
+      className="flex justify-center items-center w-full px-4 h-screen container mx-auto "
     >
-      <Card className="flex justify-center items-center gap-[4rem] p-[7rem] bg-transparent border-none shadow-none">
+      <Card className="flex justify-center items-center gap-[4rem] p-[7rem] max-md:p-[2rem] bg-transparent border-none shadow-none">
         <Image
           src={PosiflexPhoto}
           alt={""}

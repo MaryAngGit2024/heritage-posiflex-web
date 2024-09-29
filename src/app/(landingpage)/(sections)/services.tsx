@@ -46,7 +46,7 @@ export default function Services() {
         opacity: scrollYProgress,
       }}
     >
-      <section className="py-24 text-white h-screen flex items-center justify-center">
+      <section className="py-24 text-white min-h-screen flex items-center justify-center max-md:mt-[30rem]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">

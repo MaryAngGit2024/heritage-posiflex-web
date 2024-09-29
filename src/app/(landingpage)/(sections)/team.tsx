@@ -19,7 +19,7 @@ export const Team = () => {
         opacity: scrollYProgress,
       }}
     >
-      <section className="w-full h-screen flex justify-center items-center">
+      <section className="w-full h-screen flex justify-center items-center max-md:mb-[20rem]">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="text-center mb-16">

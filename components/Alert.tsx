@@ -3,7 +3,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 
 export default function AlertDialog() {
   return (
-    <Alert className="bg-[#3d2c7c] border-none rounded-none">
+    <Alert className="bg-[#3d2c7c] border-none rounded-none max-md:hidden">
       <div className="gap-[4rem] flex justify-center items-center">
         <AlertDescription className=" text-white flex gap-2 justify-center items-center">
           <MapPinCheckInside className="h-4 w-4 text-white" />

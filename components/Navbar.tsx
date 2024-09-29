@@ -32,16 +32,16 @@ const components: { title: string; href: string; description: string }[] = [
 export const Navbar = () => {
   return (
     <header className="flex item-center justify-between z-20 shadow-sm shadow-gray-200 dark:shadow-none dark:bg-[#020817] bg-gradient-to-br from-purple-100 to-indigo-200 sticky top-0">
-      <div className="space-x-2 flex items-center justify-center py-1 mb-2 gap-[5rem]  text-center ml-[8rem]">
+      <div className="space-x-2 flex items-center justify-center py-1 mb-2 gap-[5rem]  text-center ml-[8rem] max-lg:ml-[2rem]">
         <Link className="mt-3 flex justify-between gap-2" href="/">
           <Image src={Logo} alt="logo" width={50} height={50} />
-          <h1 className="flex justify-center items-center text-[#563abb] font-semibold">
+          <h1 className="flex justify-center items-center text-[#563abb] font-semibold max-lg:hidden">
             Heritage Multi-Office Products Inc.
           </h1>
         </Link>
       </div>
 
-      <div className="flex items-center justify-center space-x-8 mr-[8rem] ">
+      <div className="flex items-center justify-center space-x-8 mr-[8rem] max-lg:mr-[2rem]">
         <div className="text-xs hidden md:block">
           <ul className="flex items-center space-x-4 gap-2 font-semibold text-[0.9rem]">
             <Link
@@ -86,7 +86,7 @@ export const Navbar = () => {
             </Link>
           </ul>
         </div>
-        <div className="rounded-md">
+        <div className="rounded-md max-md:hidden">
           <Link
             className="hover:underline underline-offset-4 font-semibold rounded-full bg-[#3d2c7c] hover:bg-[#4c359d] text-white px-4 py-3 justify-between flex items-center gap-2"
             href="/contact"

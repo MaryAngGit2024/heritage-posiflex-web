@@ -78,7 +78,7 @@ export default function Testimonials() {
         scale: scrollYProgress,
         opacity: scrollYProgress,
       }}
-      className="h-screen flex justify-center items-center"
+      className="min-h-screen flex justify-center items-center "
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">

@@ -9,7 +9,7 @@ export const HeadersLanding = () => {
   return (
     <div className="flex items-center justify-center w-full pb-[6rem]">
       <div className="mr-auto border-gray-400  rounded-2xl">
-        <div className="w-full p-none">
+        <div className="w-full p-none max-md:h-[40rem] max-md:flex max-md:items-center max-md:justify-center max-md:flex-col max-md:text-center">
           <p className="xl:text-4xl lg:text-4xl md:text-2xl mb-2 text-[#563abb] font-extrabold ">
             Heritage Multi-Office Products Inc.
           </p>
