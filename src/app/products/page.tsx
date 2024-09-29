@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import {
   ArrowRightIcon,
   Search,
@@ -75,7 +75,7 @@ export default function OurProducts() {
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 15;
 
-  const [animatedCategories, setAnimatedCategories] = useState<string[]>([]);
+  // const [animatedCategories, setAnimatedCategories] = useState<string[]>([]);
 
   const filteredProducts = products.filter(
     (product) =>
@@ -96,37 +96,23 @@ export default function OurProducts() {
     setCurrentPage(pageNumber);
   };
 
-  const handleCategoryHover = (categoryName: string) => {
-    if (!animatedCategories.includes(categoryName)) {
-      setAnimatedCategories([...animatedCategories, categoryName]);
-    }
-  };
-
   return (
-    <div className="min-h-screen py-16">
+    <div className="min-h-screen py-16 ">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 bg-header-img-fur bg-cover bg-center h-[50vh] flex flex-col justify-center items-center rounded-md">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl text-gray-900 font-extrabold">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl text-gray-300 font-extrabold">
             Our Products
           </h2>
-          <p className="mt-3 max-w-md mx-auto text-base text-gray-900 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+          <p className="mt-3 max-w-md mx-auto text-base text-gray-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
             Empowering businesses with innovative solutions that drive growth
             and success.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {categories.map((category) => (
-            <motion.div
-              key={category.name}
-              onHoverStart={() => handleCategoryHover(category.name)}
-              animate={
-                animatedCategories.includes(category.name)
-                  ? { scale: 1.05, opacity: 1 }
-                  : {}
-              }
-              initial={{ scale: 1, opacity: 0.8 }}
-              transition={{ duration: 0.3 }}
+          {categories.map((category, index) => (
+            <div
+              key={index}
               className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-xl"
             >
               <div className="relative h-48">
@@ -151,7 +137,7 @@ export default function OurProducts() {
                   <ArrowRightIcon className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </Button>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
