@@ -50,6 +50,12 @@ export const Navbar = () => {
             >
               HOME
             </Link>
+            <Link
+              className="hover:underline underline-offset-4 mx-auto"
+              href="/about"
+            >
+              POSIFLEX
+            </Link>
             <NavigationMenu className="justify-end mx-auto bg-transparent">
               <NavigationMenuList className="bg-transparent">
                 <NavigationMenuItem>
@@ -78,12 +84,6 @@ export const Navbar = () => {
             >
               ABOUT US
             </Link>
-            {/* <Link
-              className="hover:underline underline-offset-4 mx-auto"
-              href="/about"
-            >
-              POSIFLEX
-            </Link> */}
           </ul>
         </div>
         <div className="rounded-md">
