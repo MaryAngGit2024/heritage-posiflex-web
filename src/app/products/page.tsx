@@ -92,7 +92,7 @@ export default function OurProducts() {
   };
 
   return (
-    <div className="min-h-screen py-16 ">
+    <div className="min-h-screen py-16  ">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 bg-header-img-fur bg-cover bg-center h-[50vh] flex flex-col justify-center items-center rounded-md">
           <h2 className="text-4xl sm:text-5xl md:text-6xl text-gray-300 font-extrabold">

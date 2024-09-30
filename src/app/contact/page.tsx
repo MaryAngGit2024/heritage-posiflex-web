@@ -32,7 +32,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen px-4 sm:px-6 lg:px-8 py-[5rem]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
@@ -128,7 +128,8 @@ export default function ContactPage() {
                   <div className="ml-3">
                     <dt className="sr-only">Address</dt>
                     <dd>
-                      123 Business Street, Suite 100, San Francisco, CA 94111
+                      13 Linaw, Santa Mesa Heights, Quezon City, 1114 Metro
+                      Manila
                     </dd>
                   </div>
                 </div>
@@ -138,8 +139,8 @@ export default function ContactPage() {
                     aria-hidden="true"
                   />
                   <div className="ml-3">
-                    <dt className="sr-only">Phone number</dt>
-                    <dd>+1 (555) 123-4567</dd>
+                    <dt className="sr-only">Contact Number</dt>
+                    <dd>(632) 562-9280</dd>
                   </div>
                 </div>
                 <div className="mt-3 flex">
@@ -148,27 +149,14 @@ export default function ContactPage() {
                     aria-hidden="true"
                   />
                   <div className="ml-3">
-                    <dt className="sr-only">Email</dt>
-                    <dd>contact@example.com</dd>
+                    <dt className="sr-only">Emails</dt>
+                    <dd>
+                      posiflex@hmopi.net | pfsales@hmopi.net |
+                      statio_sales1@hmopi.net
+                    </dd>
                   </div>
                 </div>
               </dl>
-              <div className="mt-8">
-                <div className="flex space-x-6">
-                  <a href="#" className="text-gray-400 hover:text-gray-500">
-                    <span className="sr-only">Facebook</span>
-                    <Facebook className="h-6 w-6" aria-hidden="true" />
-                  </a>
-                  <a href="#" className="text-gray-400 hover:text-gray-500">
-                    <span className="sr-only">Twitter</span>
-                    <Twitter className="h-6 w-6" aria-hidden="true" />
-                  </a>
-                  <a href="#" className="text-gray-400 hover:text-gray-500">
-                    <span className="sr-only">LinkedIn</span>
-                    <Linkedin className="h-6 w-6" aria-hidden="true" />
-                  </a>
-                </div>
-              </div>
             </div>
             <div className="mt-8 aspect-w-5 aspect-h-3 bg-gray-200 rounded-lg overflow-hidden">
               {/* Replace this div with an actual map component */}
