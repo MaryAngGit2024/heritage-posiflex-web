@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useScroll } from "framer-motion";
-import { ArrowRightIcon, Link } from "lucide-react";
+import { ArrowRightIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useRef } from "react";
