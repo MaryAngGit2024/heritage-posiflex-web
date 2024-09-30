@@ -1,10 +1,11 @@
 "use client";
 
 import { motion, useScroll } from "framer-motion";
-import { ArrowRightIcon } from "lucide-react";
+import { ArrowRightIcon, Link } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useRef } from "react";
+import { useRouter } from "next/navigation";
 
 const categories = [
   {
@@ -26,6 +27,7 @@ const categories = [
     name: "Stationery",
     image: "/stationery.avif?height=400&width=600",
     description: "High-quality office and writing supplies",
+    link: "/products",
   },
 ];
 
@@ -35,7 +37,7 @@ export default function OurProducts() {
     target: targetRef,
     offset: ["0 1", "0.90 1"],
   });
-
+  const router = useRouter();
   return (
     <div className="h-screen  flex justify-center items-center max-md:mt-[30rem]">
       <div className="container mx-auto px-4">
@@ -73,8 +75,14 @@ export default function OurProducts() {
                   {category.name}
                 </h2>
                 <p className="text-gray-600 mb-4">{category.description}</p>
-                <Button className="w-full group" variant="outline">
-                  Explore {category.name}
+                <Button
+                  className="w-full group"
+                  variant="outline"
+                  onClick={() => {
+                    router.push("/products");
+                  }}
+                >
+                  {category.name}
                   <ArrowRightIcon className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </Button>
               </div>

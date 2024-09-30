@@ -109,7 +109,7 @@ export default function OurProducts() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
           {categories.map((category, index) => (
             <div
               key={index}
@@ -127,15 +127,7 @@ export default function OurProducts() {
                 <h2 className="text-xl font-semibold mb-2 text-gray-800">
                   {category.name}
                 </h2>
-                <p className="text-gray-600 mb-4">{category.description}</p>
-                <Button
-                  className="w-full group"
-                  variant="outline"
-                  onClick={() => setSelectedCategory(category.name)}
-                >
-                  Explore {category.name}
-                  <ArrowRightIcon className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                </Button>
+                <p className="text-gray-600 ">{category.description}</p>
               </div>
             </div>
           ))}
