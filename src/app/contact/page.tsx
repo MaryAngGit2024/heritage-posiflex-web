@@ -39,8 +39,8 @@ export default function ContactPage() {
             Contact Us
           </h2>
           <p className="mt-4 text-lg text-gray-500">
-            We'd love to hear from you. Drop us a line and we'll get back to you
-            as soon as possible.
+            We love to hear from you. Drop us a line and well get back to you as
+            soon as possible.
           </p>
         </div>
 
