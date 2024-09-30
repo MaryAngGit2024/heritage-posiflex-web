@@ -50,7 +50,7 @@ export default function AboutPage() {
                 <h3 className="text-2xl font-semibold mb-4">Who We Are</h3>
                 <p className="text-gray-600 mb-6">
                   Heritage Multi-Office Products Inc. is a forward-thinking
-                  digital design agency founded in 2010. We're a team of
+                  digital design agency founded in 2010. Were a team of
                   passionate designers, developers, and strategists dedicated to
                   creating exceptional digital experiences that drive business
                   growth and user engagement.
@@ -67,7 +67,7 @@ export default function AboutPage() {
                 <p className="text-gray-600 mb-6">
                   Our design process is rooted in research, creativity, and
                   continuous improvement. We start by deeply understanding our
-                  clients' needs and their users' behaviors. From there, we
+                  clients needs and their users behaviors. From there, we
                   ideate, prototype, and refine our designs through multiple
                   iterations, always keeping the end-user in mind.
                 </p>
@@ -162,7 +162,7 @@ export default function AboutPage() {
           <div className="container px-4 md:px-6 text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to try our brand </h2>
             <p className="text-xl mb-8">
-              Let's create something amazing together.
+              Lets create something amazing together.
             </p>
             <Button className="bg-white text-gray-900 hover:bg-gray-100">
               Contact Us
