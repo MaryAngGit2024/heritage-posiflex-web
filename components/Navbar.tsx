@@ -13,6 +13,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import { MenuSlider } from "./Slider";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -94,6 +95,9 @@ export const Navbar = () => {
             <Phone />
             CONTACT US
           </Link>
+        </div>
+        <div className="max-md:block hidden">
+          <MenuSlider />
         </div>
       </div>
     </header>
