@@ -12,18 +12,11 @@ export default function About() {
   const targetRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
-    offset: ["0 1", "0.60 1"],
+    offset: ["0 1", "1 1"],
   });
 
   return (
-    <motion.div
-      ref={targetRef}
-      style={{
-        scale: scrollYProgress,
-        opacity: scrollYProgress,
-      }}
-      className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 pt-[20rem]"
-    >
+    <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 pt-[20rem]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
@@ -83,7 +76,14 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mt-20 relative">
+        <motion.div
+          ref={targetRef}
+          style={{
+            scale: scrollYProgress,
+            opacity: scrollYProgress,
+          }}
+          className="mt-20 relative"
+        >
           <Card className="bg-white shadow-xl rounded-lg overflow-hidden">
             <CardContent className="p-8">
               <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
@@ -144,8 +144,8 @@ export default function About() {
               </div>
             </CardContent>
           </Card>
-        </div>
+        </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 }

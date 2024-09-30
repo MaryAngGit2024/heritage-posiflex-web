@@ -1,28 +1,21 @@
 "use client";
 
-import React, { useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import PosiflexPhoto from "@/images/Posiflex-with-screen-final.gif";
 import { Building } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import { motion, useScroll } from "framer-motion";
+// import { motion, useScroll } from "framer-motion";
 
 export const Posiflex = () => {
-  const targetRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-    offset: ["0 1", "1.0 1"],
-  });
+  // const targetRef = useRef<HTMLDivElement>(null);
+  // const { scrollYProgress } = useScroll({
+  //   target: targetRef,
+  //   offset: ["0 1", "1.0 1"],
+  // });
 
   return (
-    <motion.div
-      ref={targetRef}
-      style={{
-        scale: scrollYProgress,
-        opacity: scrollYProgress,
-      }}
-      className="flex justify-center items-center w-full px-4 h-screen container mx-auto "
-    >
+    <div className="flex justify-center items-center w-full px-4 h-screen container mx-auto ">
       <Card className="flex justify-center items-center gap-[4rem] p-[7rem] max-md:p-[2rem] bg-transparent border-none shadow-none">
         <Image
           src={PosiflexPhoto}
@@ -61,6 +54,6 @@ export const Posiflex = () => {
           </div>
         </div>
       </Card>
-    </motion.div>
+    </div>
   );
 };

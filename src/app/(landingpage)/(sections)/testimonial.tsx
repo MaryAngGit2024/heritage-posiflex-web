@@ -1,8 +1,8 @@
 "use client";
 
-import { motion, useScroll } from "framer-motion";
+// import { motion, useScroll } from "framer-motion";
 import { QuoteIcon } from "lucide-react";
-import { useRef } from "react";
+// import { useRef } from "react";
 // import Image from "next/image";
 
 interface Props {
@@ -65,21 +65,14 @@ function TestimonialCard({ quote, author, position }: Props) {
 }
 
 export default function Testimonials() {
-  const targetRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-    offset: ["0 1", "0.90 1"],
-  });
+  // const targetRef = useRef<HTMLDivElement>(null);
+  // const { scrollYProgress } = useScroll({
+  //   target: targetRef,
+  //   offset: ["0 1", "0.90 1"],
+  // });
 
   return (
-    <motion.div
-      ref={targetRef}
-      style={{
-        scale: scrollYProgress,
-        opacity: scrollYProgress,
-      }}
-      className="min-h-screen flex justify-center items-center "
-    >
+    <div className="min-h-screen flex justify-center items-center ">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
@@ -97,6 +90,6 @@ export default function Testimonials() {
           ))}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }

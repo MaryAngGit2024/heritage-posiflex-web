@@ -36,16 +36,10 @@ export default function Services() {
   const targetRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
-    offset: ["0 1", "1.0 1"],
+    offset: ["0 1", "1 1"],
   });
   return (
-    <motion.div
-      ref={targetRef}
-      style={{
-        scale: scrollYProgress,
-        opacity: scrollYProgress,
-      }}
-    >
+    <div>
       <section className="py-24 text-white min-h-screen flex items-center justify-center max-md:mt-[30rem]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -60,26 +54,32 @@ export default function Services() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <Card
+              <motion.div
                 key={index}
-                className="bg-[#6366F1] border-transparent overflow-hidden group shadow-black shadow-md"
+                ref={targetRef}
+                style={{
+                  scale: scrollYProgress,
+                  opacity: scrollYProgress,
+                }}
               >
-                <CardContent className="p-6 flex flex-col items-center text-center h-full">
-                  <div className="mb-4 p-3 bg-transparent rounded-full transform group-hover:scale-110 transition-transform duration-300">
-                    {service.icon}
-                  </div>
-                  <h3 className="text-2xl text-white font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
-                    {service.title}
-                  </h3>
-                  <p className="text-white group-hover:text-white transition-colors duration-300">
-                    {service.description}
-                  </p>
-                </CardContent>
-              </Card>
+                <Card className="bg-[#6366F1] border-transparent overflow-hidden group shadow-black shadow-md">
+                  <CardContent className="p-6 flex flex-col items-center text-center h-full">
+                    <div className="mb-4 p-3 bg-transparent rounded-full transform group-hover:scale-110 transition-transform duration-300">
+                      {service.icon}
+                    </div>
+                    <h3 className="text-2xl text-white font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                    <p className="text-white group-hover:text-white transition-colors duration-300">
+                      {service.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
-    </motion.div>
+    </div>
   );
 }
