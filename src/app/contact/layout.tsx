@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Products - Heritage Multi-Office Products Inc.",
+  title: "Contact Us - Heritage Multi-Office Products Inc.",
   description: "A Pacesetter in Business Automation.",
 };
 
